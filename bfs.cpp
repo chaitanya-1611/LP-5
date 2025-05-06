@@ -80,7 +80,7 @@ void Breathfs::bfs(){
             {
                 currentNode=q.front();
                 q.pop();
-                cout<<"Thread "<<omp_get_thread_num()<<currentNode->data<<endl;
+                cout<<"Thread "<<omp_get_thread_num()<<currentNode->data<<" ";
             }
 
             #pragma omp critical
