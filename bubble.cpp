@@ -5,7 +5,7 @@
 using namespace std;
 
 void bubble(int *arr,int n){
-    for(int i=0;i<n-1;i++){
+    for(int i=0;i<n;i++){
         int first = i%2;
 
         #pragma omp parallel for shared(arr,first)
