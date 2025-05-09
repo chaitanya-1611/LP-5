@@ -29,7 +29,7 @@ void dfs(int node)
                
 
             // Don't parallelize this part - unsafe on stack
-            #pragma omp parrallel for
+            #pragma omp parallel for
             for (int i = 0; i < graph[current].size(); i++)
             {
                 int neighbor = graph[current][i];
